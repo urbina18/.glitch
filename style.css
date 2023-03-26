@@ -1,173 +1,132 @@
-/* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: #333333;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Header styles */
+/* Style for the header */
 header {
-  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 36px;
 }
 
 nav ul {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
 }
 
-nav ul li {
-  margin-left: 20px;
+nav li {
+  margin-right: 20px;
 }
 
-nav ul li:first-child {
-  margin-left: 0;
+nav li:last-child {
+  margin-right: 0;
 }
 
-nav ul li a {
-  color: #333333;
+nav a {
   text-decoration: none;
+  color: #333;
+  font-size: 18px;
 }
 
-nav ul li a:hover {
-  color: #f00000;
+nav a:hover {
+  color: #6b6b6b;
 }
 
-/* Main styles */
+/* Style for the main content */
 main {
-  margin-top: 100px;
-  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 section {
   margin-bottom: 40px;
 }
 
-h2 {
-  font-size: 24px;
+section h2 {
   margin-top: 0;
-  margin-bottom: 20px;
 }
 
-ul {
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-li {
-  margin-right: 40px;
-  margin-bottom: 40px;
-  max-width: 400px;
-  flex-basis: calc(33.33% - 40px);
+section li {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
 }
 
-li:last-child {
-  margin-right: 0;
-}
-
-li h3 {
-  font-size: 20px;
+section li h3 {
   margin-top: 0;
-  margin-bottom: 10px;
+  font-size: 24px;
 }
 
-li p {
+section li p {
+  margin-top: 5px;
   font-size: 18px;
-  margin: 0;
+}
+
+section li img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-th,
-td {
-  padding: 10px;
+table th {
   text-align: left;
-}
-
-th {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
+  padding: 10px;
   background-color: #f2f2f2;
 }
 
-tr:hover {
-  background-color: #dddddd;
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
+section video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Style for the contact form */
 form {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 label {
-  display: block;
   margin-bottom: 10px;
-  font-size: 18px;
 }
 
 input,
 textarea {
-  display: block;
-  width: 100%;
   padding: 10px;
-  font-size: 18px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
   margin-bottom: 20px;
-}
-
-textarea {
-  height: 150px;
-  resize: none;
-}
-
-button {
-  background-color: #f00000;
-  color: #ffffff;
-  padding: 10px 20px;
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #b30000;
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
 }
