@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Greenhouse | Home</title>
-	<meta name="description" content="Welcome to The Greenhouse, your one-stop-shop for all things plants. Browse our collection of indoor and outdoor plants, planters, and gardening tools.">
-	<meta name="keywords" content="plants, gardening, planters, indoor plants, outdoor plants">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li><a href="plants.html">Plants</a></li>
-				<li><a href="planters.html">Planters</a></li>
-				<li><a href="tools.html">Tools</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="banner">
-			<h1>Welcome to The Greenhouse</h1>
-			<p>Your one-stop-shop for all things plants</p>
-			<a href="plants.html" class="cta">Shop Now</a>
-		</div>
-	</header>
-	<main>
-		<section class="about">
-			<h2>About Us</h2>
-			<p>The Greenhouse is a family-owned business that has been providing high-quality plants, planters, and gardening tools for over 20 years. We are passionate about plants and believe in their power to enhance our lives and the environment around us. Our mission is to make it easy for everyone to bring more green into their lives.</p>
-			<a href="about.html" class="cta">Learn More</a>
-		</section>
-		<section class="services">
-			<h2>Our Services</h2>
-			<ul>
-				<li>
-					<h3>Plant Care Workshops</h3>
-					<p>Learn how to care for your plants with our expert-led workshops.</p>
-				</li>
-				<li>
-					<h3>Plant Delivery</h3>
-					<p>Get your new plants delivered right to your doorstep.</p>
-				</li>
-				<li>
-					<h3>Plant Rental</h3>
-					<p>Rent plants for your home or office for a touch of green without the commitment.</p>
-				</li>
-			</ul>
-			<a href="services.html" class="cta">See All Services</a>
-		</section>
-		<section class="featured">
-			<h2>Featured Products</h2>
-			<ul>
-				<li>
-					<img src="plant1.jpg" alt="Monstera deliciosa">
-					<h3>Monstera deliciosa</h3>
-					<p>$35</p>
-				</li>
-				<li>
-					<img src="plant2.jpg" alt="Fiddle leaf fig">
-					<h3>Fiddle Leaf Fig</h3>
-					<p>$50</p>
-				</li>
-				<li>
-					<img src="planter1.jpg" alt="White ceramic planter">
-					<h3>White Ceramic Planter</h3>
-					<p>$20</p>
-				</li>
-				<li>
-				
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Shop</title>
+    <style>
+    <link rel="stylesheet" href="style.css" >
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Plant Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#plants">Plants</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="plants">
+        <h2>Plants</h2>
+        <ul>
+          <li>
+            <h3>Succulent</h3>
+            <p>$10</p>
+            <img src="succulent.jpg" alt="Succulent" />
+          </li>
+          <li>
+            <h3>Snake Plant</h3>
+            <p>$20</p>
+            <img src="snake-plant.jpg" alt="Snake Plant" />
+          </li>
+          <li>
+            <h3>Peace Lily</h3>
+            <p>$15</p>
+            <img src="peace-lily.jpg" alt="Peace Lily" />
+          </li>
+        </ul>
+      </section>
+
+      <section id="tools">
+        <h2>Tools</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gardening Gloves</td>
+              <td>$5</td>
+            </tr>
+            <tr>
+              <td>Hand Trowel</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <td>Pruning Shears</td>
+              <td>$15</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="media">
+        <h2>Media</h2>
+        <video src="plant-care-tips.mp4" controls></video>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Plant Shop</p>
+    </footer>
+  </body>
+</html>
