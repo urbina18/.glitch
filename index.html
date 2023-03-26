@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Greenhouse | Home</title>
+	<meta name="description" content="Welcome to The Greenhouse, your one-stop-shop for all things plants. Browse our collection of indoor and outdoor plants, planters, and gardening tools.">
+	<meta name="keywords" content="plants, gardening, planters, indoor plants, outdoor plants">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+    <!-- this is the header with navigation controls -->
+    <header class="main-header">
+      <div class="container">
+        <h1 class="mh-logo">
+          <a href="./index.html"
+            ><img
+              src="https://cdn.glitch.global/602fb1f2-eb68-4568-bb0d-8a7cb2f3cfa2/77_jacc_logo_with_japanese_478x500.jpeg?v=1679027491136"
+              width="100"
+              height="80"
+              alt="JACC logo"
+          /></a>
+        </h1>
+        <nav class="main-nav">
+          <ul>
+            <li><span>Home</span></li>
+            <li><a href="./index.html">About</a></li>
+            <li>
+              <a href="./Plants.html">Mission</a>
+            </li>
+            <li>
+              <a href="./.html">Schedule</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
-</html>
+		<div class="banner">
+			<h1>Welcome to The Greenhouse</h1>
+			<p>Your one-stop-shop for all things plants</p>
+			<a href="plants.html" class="cta">Shop Now</a>
+		</div>
+	</header>
+	<main>
+		<section class="about">
+			<h2>About Us</h2>
+			<p>The Greenhouse is a family-owned business that has been providing high-quality plants, planters, and gardening tools for over 20 years. We are passionate about plants and believe in their power to enhance our lives and the environment around us. Our mission is to make it easy for everyone to bring more green into their lives.</p>
+			<a href="about.html" class="cta">Learn More</a>
+		</section>
+		<section class="services">
+			<h2>Our Services</h2>
+			<ul>
+				<li>
+					<h3>Plant Care Workshops</h3>
+					<p>Learn how to care for your plants with our expert-led workshops.</p>
+				</li>
+				<li>
+					<h3>Plant Delivery</h3>
+					<p>Get your new plants delivered right to your doorstep.</p>
+				</li>
+				<li>
+					<h3>Plant Rental</h3>
+					<p>Rent plants for your home or office for a touch of green without the commitment.</p>
+				</li>
+			</ul>
+			<a href="services.html" class="cta">See All Services</a>
+		</section>
+		<section class="featured">
+			<h2>Featured Products</h2>
+			<ul>
+				<li>
+					<img src="plant1.jpg" alt="Monstera deliciosa">
+					<h3>Monstera deliciosa</h3>
+					<p>$35</p>
+				</li>
+				<li>
+					<img src="plant2.jpg" alt="Fiddle leaf fig">
+					<h3>Fiddle Leaf Fig</h3>
+					<p>$50</p>
+				</li>
+				<li>
+					<img src="planter1.jpg" alt="White ceramic planter">
+					<h3>White Ceramic Planter</h3>
+					<p>$20</p>
+				</li>
+				<li>
+					<img src="tool1.jpg" alt="Gardening gloves">
+          <h3>Gardening Gloves</h
+            
