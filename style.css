@@ -24,7 +24,7 @@ nav li:last-child {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #333333;
   font-size: 18px;
 }
 
@@ -91,7 +91,7 @@ table th {
 
 table td {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 section video {
@@ -122,7 +122,7 @@ textarea {
 button[type="submit"] {
   padding: 10px 20px;
   background-color: #4caf50;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -154,6 +154,6 @@ button[type="submit"]:hover {
 .gallery img {
   width: 100%;
   height: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
