@@ -133,7 +133,8 @@ button[type="submit"]:hover {
 }
 
 /* style for the image in contact page */
-  img {
+  
+#my-image {
       width: 20%;
       height: auto;
       border: 1px solid black;
